@@ -1,6 +1,6 @@
 #include "mainwindow.h"
 #include "ui_mainwindow.h"
-#include <QDebug>5
+#include <QDebug>
 
 MainWindow::MainWindow(QWidget *parent) :
     QMainWindow(parent),
@@ -13,6 +13,7 @@ MainWindow::MainWindow(QWidget *parent) :
 void MainWindow::sendMsg()
 {
     qDebug() << "TTTTTTTT";
+    ui->chatMessages->append("ffff");
 }
 
 MainWindow::~MainWindow()
