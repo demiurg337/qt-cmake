@@ -18,6 +18,9 @@ public:
 public slots:
     void sendMsg();
 
+private slots:
+    void on_addNewFriend_triggered();
+
 private:
     Ui::MainWindow *ui;
 };

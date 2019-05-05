@@ -14,16 +14,6 @@
    <string>MainWindow</string>
   </property>
   <widget class="QWidget" name="centralWidget">
-   <widget class="QListView" name="listView_2">
-    <property name="geometry">
-     <rect>
-      <x>505</x>
-      <y>1</y>
-      <width>281</width>
-      <height>371</height>
-     </rect>
-    </property>
-   </widget>
    <widget class="QWidget" name="layoutWidget">
     <property name="geometry">
      <rect>
@@ -57,6 +47,16 @@ p, li { white-space: pre-wrap; }
      </item>
     </layout>
    </widget>
+   <widget class="QTextBrowser" name="textBrowser">
+    <property name="geometry">
+     <rect>
+      <x>506</x>
+      <y>1</y>
+      <width>281</width>
+      <height>371</height>
+     </rect>
+    </property>
+   </widget>
   </widget>
   <widget class="QMenuBar" name="menuBar">
    <property name="geometry">
@@ -71,7 +71,7 @@ p, li { white-space: pre-wrap; }
     <property name="title">
      <string>actions</string>
     </property>
-    <addaction name="actionAdd_new"/>
+    <addaction name="addNewFriend"/>
    </widget>
    <addaction name="menumessager"/>
   </widget>
@@ -84,16 +84,13 @@ p, li { white-space: pre-wrap; }
    </attribute>
   </widget>
   <widget class="QStatusBar" name="statusBar"/>
-  <action name="actionAdd_new">
+  <action name="addNewFriend">
    <property name="text">
-    <string>Add new</string>
+    <string>Add new user</string>
    </property>
   </action>
  </widget>
  <layoutdefault spacing="6" margin="11"/>
- <tabstops>
-  <tabstop>listView_2</tabstop>
- </tabstops>
  <resources/>
  <connections/>
 </ui>
