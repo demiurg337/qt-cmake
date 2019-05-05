@@ -1,7 +1,7 @@
 #include "mainwindow.h"
 #include "ui_mainwindow.h"
 #include <QDebug>
-#include <QAction>
+#include <QInputDialog>
 
 MainWindow::MainWindow(QWidget *parent) :
     QMainWindow(parent),
@@ -21,6 +21,12 @@ void MainWindow::on_addNewFriend_triggered()
 {
     qDebug() << "TTTTTTTT";
     ui->chatMessages->append("<b>dddddd</b>");
+    bool ok;
+    QString txt = QInputDialog::getText(this, tr("Address of new user"),
+                                      tr("Addres of user"), QLineEdit::Normal, "xxxx", &ok);
+    if (ok && !txt.isEmpty()) {
+        qDebug() << txt;
+    }
 }
 
 MainWindow::~MainWindow()
